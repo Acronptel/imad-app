@@ -8,12 +8,22 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article1', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article1.html'));
-});
-app.get('/kishan',function (req,res) {
-    res.send('hey i am kishan');
-});
+
+
+    app.get('/a1',function (req,res) {
+        res.send('hey i am kishan1');
+    });
+    
+    app.get('/a2',function (req,res) {
+        res.send('hey i am kishan2');
+    });
+    
+    app.get('/a2',function (req,res) {
+        res.send('hey i am kishan3');
+    });
+
+
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
