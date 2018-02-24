@@ -18,7 +18,7 @@ app.get('/', function (req, res) {
         res.send('hey i am kishan2');
     });
     
-    app.get('/a2',function (req,res) {
+    app.get('/a3',function (req,res) {
         res.send('hey i am kishan3');
     });
 
